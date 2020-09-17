@@ -6,7 +6,12 @@ namespace ECS.Testable
     public class TempSensor : ITempSensor
     {
         
-        IRandomNumberProvider gen{get; set;}
+        public IRandomNumberProvider gen{get; set;}
+
+        public TempSensor(IRandomNumberProvider rndNumberProvider)
+        {
+            gen = rndNumberProvider;
+        }
         public int GetTemp()
         {
             return gen.Next(-5, 45);

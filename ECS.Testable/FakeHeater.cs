@@ -2,7 +2,12 @@ namespace ECS.Testable
 {
     public class FakeHeater : IHeater
     {
-        ILogger _logger {get; set;}
+        public ILogger _logger {get; set;}
+
+        public FakeHeater()
+        {
+            _logger = new FakeLogger();
+        }
         public void TurnOn()
         {
             _logger.WriteLogLine("Heater Turned On");

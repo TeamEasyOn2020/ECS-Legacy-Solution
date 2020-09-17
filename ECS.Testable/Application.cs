@@ -1,10 +1,12 @@
-﻿namespace ECS.Legacy
+﻿namespace ECS.Testable
 {
     public class Application
     {
         public static void Main(string[] args)
         {
-            var ecs = new ECS(28);
+            var temp = new FakeTempSensor();
+            var heater = new FakeHeater();
+            var ecs = new ECS(28,temp,heater);
 
             ecs.Regulate();
 

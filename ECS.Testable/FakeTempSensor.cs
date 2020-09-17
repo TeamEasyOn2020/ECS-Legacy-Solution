@@ -6,7 +6,11 @@ namespace ECS.Testable
     public class FakeTempSensor : ITempSensor
     {
         
-        IRandomNumberProvider gen{get; set;}
+        public IRandomNumberProvider gen{get; set;}
+        public FakeTempSensor()
+        {
+            gen = new FakeRandomNumberGenerator();
+        }
         public int GetTemp()
         {
             return gen.Next(0,23);

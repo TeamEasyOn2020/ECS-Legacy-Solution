@@ -8,7 +8,7 @@ namespace ECS.Testable
     {
         public void WriteLogLine(string line)
         {
-            Console.Writeline($"{line}");
+            Console.WriteLine($"{line}");
         }
     }
 }
