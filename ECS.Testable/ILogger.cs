@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ECS.Testable
 {
-    public interface IRandomNumberProvider
+    public interface ILogger
     {
-        public int Next(int lowerBound, int higherBound);
+        public void WriteLogLine(string line);
     }
 }

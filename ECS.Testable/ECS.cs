@@ -6,11 +6,11 @@
         private readonly ITempSensor _tempSensor;
         private readonly IHeater _heater;
 
-        public ECS(int thr)
+        public ECS(int thr, ITempSensor tempSensor, IHeater heater)
         {
             SetThreshold(thr);
-            _tempSensor = new ITempSensor();
-            _heater = new IHeater();
+            _tempSensor = tempSensor;
+            _heater = heater;
         }
 
         public void Regulate()

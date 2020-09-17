@@ -5,9 +5,8 @@ namespace ECS.Testable
 {
     public interface ITempSensor
     {
-        public IRandomNumberGenerator {private get; private set;}
-
-
+        
+        IRandomNumberProvider gen{get; set;}
         public int GetTemp();
         public bool RunSelfTest();
     }
