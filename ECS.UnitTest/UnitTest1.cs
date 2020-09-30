@@ -67,11 +67,11 @@ namespace ECS.UnitTest
         public void GetCurTemp_Temp_EqualsTemp(int temp)
         {
             //Arange setup
-
+            fakeTempSensor.GetTemp().Returns(temp);
             // Act
 
             // Assert
-            fakeTempSensor.GetTemp().Returns(temp);
+            Assert.That(uut.GetCurTemp(), Is.EqualTo(temp));
         }
 
 
