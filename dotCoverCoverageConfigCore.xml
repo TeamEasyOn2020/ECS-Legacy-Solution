@@ -20,7 +20,7 @@
         <FunctionMask>*</FunctionMask>
       </FilterEntry>
       <FilterEntry>
-        <ModuleMask>ECS.Testable.dll</ModuleMask>
+        <ModuleMask>ECS.Testable</ModuleMask>
         <ClassMask>FakeLogger</ClassMask>
         <FunctionMask>*</FunctionMask>
       </FilterEntry>
