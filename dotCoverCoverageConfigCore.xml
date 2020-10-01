@@ -21,7 +21,7 @@
       </FilterEntry>
       <FilterEntry>
         <ModuleMask>ECS.Testable</ModuleMask>
-        <ClassMask>Fake*</ClassMask>
+        <ClassMask>FakeLogger</ClassMask>
         <FunctionMask>*</FunctionMask>
       </FilterEntry>
     </ExcludeFilters>
